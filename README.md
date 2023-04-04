@@ -1,2 +1,3 @@
-# YanShangxue.github.io这是我的个人静态网站
-网站链接：https://YanShangxue.github.io
+# 这是我的个人静态网站，欢迎有缘人访问
+# 网站链接：https://YanShangxue.github.io
+## 开发思路：本网站本来打算使用jekyll来编写，但由于两年多没有使用jekyll，已经忘记了具体的结构和使用方法。摸索了一晚上还是不习惯Liquid的模板语言，由于开发者前端知识暂时仅限于基本的html和css，且本网站构成简单，所以最后直接选择使用最简单的html文件来编写，一力破万法。
