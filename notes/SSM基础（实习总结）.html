@@ -11,31 +11,31 @@
 
 <body>
 	<div class="container">
-	<header>
-		<h1>燕伤雪的学习笔记</h1>
-		<p>在这里，我将分享我在学习过程中所积累的知识和经验。</p>
-	</header>
-	<div class="nav">
-		<a href="/index.html">首页</a>
-		<div class="nav-item">
-			<a href="/note.html">学习笔记</a>
-			<div class="sub-nav">
-				<a href="/note.html#End">前端</a>
-				<a href="/note.html#Backend">后端</a>
-				<a href="/note.html#math">数学</a>
-				<a href="/note.html#AI">人工智能</a>
-				<a href="/note.html#Data Structures and Algorithms">数据结构与算法</a>
-				<a href="/note.html#other ">其他</a>
+		<header>
+			<h1>燕伤雪的学习笔记</h1>
+			<p>在这里，我将分享我在学习过程中所积累的知识和经验。</p>
+		</header>
+		<div class="nav">
+			<a href="/index.html">首页</a>
+			<div class="nav-item">
+				<a href="/note.html">学习笔记</a>
+				<div class="sub-nav">
+					<a href="/note.html#End">前端</a>
+					<a href="/note.html#Backend">后端</a>
+					<a href="/note.html#math">数学</a>
+					<a href="/note.html#AI">人工智能</a>
+					<a href="/note.html#Data Structures and Algorithms">数据结构与算法</a>
+					<a href="/note.html#other ">其他</a>
+				</div>
 			</div>
+			<a href="/index.html#Project Presentation">项目展示</a>
+			<a href="/index.html#media">社交媒体</a>
+			<a href="/index.html#contact">联系方式</a>
 		</div>
-		<a href="/index.html#Project Presentation">项目展示</a>
-		<a href="/index.html#media">社交媒体</a>
-		<a href="/index.html#contact">联系方式</a>
-	</div>
-	<section>
-	<h2 id='一前期学习总结'>一、前期学习总结</h2>
-	<h3 id='1java项目的5层结构'>1、java项目的5层结构</h3>
-	<pre>
+		<section>
+			<h2 id='一前期学习总结'>一、前期学习总结</h2>
+			<h3 id='1java项目的5层结构'>1、java项目的5层结构</h3>
+			<pre>
 	视图层			控制层     	 	业务层			数据层			企业信息系统层
 	View			Controller		Service			Dao    			 EIS
 	JavaScipt		Java		  	Java			Java			 SQL
@@ -44,150 +44,161 @@
            	  	     	  		    ServiceImpl实现		Mapper接口
             	  	  	 	 	 	 	  	        xml实现
 </pre>
-	<ul>
-		<li>EIS层：数据的存储</li>
-		<li>DAO层：负责数据的增删改查（对象关系映射）</li>
-		<li>Service层：负责业务（页面、App、请求、小程序）功能的实现</li>
-		<li>Controller层：接受请求、调用业务层来处理请求、返回数据</li>
-		<li>View层:展现后台的数据给用户</li>
+			<ul>
+				<li>EIS层：数据的存储</li>
+				<li>DAO层：负责数据的增删改查（对象关系映射）</li>
+				<li>Service层：负责业务（页面、App、请求、小程序）功能的实现</li>
+				<li>Controller层：接受请求、调用业务层来处理请求、返回数据</li>
+				<li>View层:展现后台的数据给用户</li>
 
-	</ul>
-	<p>&nbsp;</p>
-	<h3 id='2spring框架入门'>2、Spring框架入门</h3>
-	<h4 id='21两大核心'>2.1、两大核心</h4>
-	<ul>
-		<li>第一大核心，ioc（inversion of control）控制反转</li>
-		<li>第二大核心，aop（Aspect oriented programing）面向切面编程</li>
+			</ul>
+			<p>&nbsp;</p>
+			<h3 id='2spring框架入门'>2、Spring框架入门</h3>
+			<h4 id='21两大核心'>2.1、两大核心</h4>
+			<ul>
+				<li>第一大核心，ioc（inversion of control）控制反转</li>
+				<li>第二大核心，aop（Aspect oriented programing）面向切面编程</li>
 
-	</ul>
-	<h4 id='22已用到的注解'>2.2、已用到的注解</h4>
-	<p>@Autowired 类型注入、把同类型的实例赋值给当前成员变量
-		@Resource 名字注入、把对应名字的实例赋值给当前成员变量</p>
-	<p>以下四个注解的相同点都是创建对象、都是IOC注解
-		区别是每个注解含义不同
-		@Component 普通的组件，实例化对象时使用，写在类上方
-		@Repository 数据层组件
-		@Service 业务层组件
-		@Controller 控制层组件</p>
-	<h3 id='3springmvc入门'>3、SpringMVC入门</h3>
-	<h4 id='31mvc编程模式'>3.1、MVC编程模式</h4>
-	<p>M:Model 模型层、后台发送到前台的数据（JSON、form-data等类型）
-		V:View 视图层：前台页面、前端小程序等
-		C:Controller 控制层：控制器</p>
-	<h4 id='32已用到的注解'>3.2、已用到的注解</h4>
-	<p>@Controller 控制器的注解、写在类上方、方法返回的是页面
-		@RequestMapping 请求映射、访问路径、写在类的上方或方法的上方
-		@ResponseBody 把Java对象自动转换为JSON数据
-		@RestController 控制层注解写在类上方，相当于@Controller+@ResponseBody
-		@RequestParam 通过@RequestParam封装为一个Map集合</p>
-	<h3 id='4mybatis入门'>4、Mybatis入门</h3>
-	<h4 id='41原理'>4.1原理</h4>
-	<ul>
-		<li>ORM（Object Relational Mapping）框架，采用元数据来描述对象与关系映射的细节，元数据一般采用XML格式，并且存放在专门的对象一映射文件中。</li>
+			</ul>
+			<h4 id='22已用到的注解'>2.2、已用到的注解</h4>
+			<div class="text">
+				<pre>
+	@Autowired 类型注入、把同类型的实例赋值给当前成员变量
+	@Resource 名字注入、把对应名字的实例赋值给当前成员变量
+	以下四个注解的相同点都是创建对象、都是IOC注解
+	区别是每个注解含义不同
+	@Component 普通的组件，实例化对象时使用，写在类上方
+	@Repository 数据层组件
+	@Service 业务层组件
+	@Controller 控制层组件</pre>
+			</div>
+			<h3 id='3springmvc入门'>3、SpringMVC入门</h3>
+			<h4 id='31mvc编程模式'>3.1、MVC编程模式</h4>
+			<div class="text">
+				<pre>
+	M:Model 模型层、后台发送到前台的数据（JSON、form-data等类型）
+	V:View 视图层：前台页面、前端小程序等
+	C:Controller 控制层：控制器
+	</pre>
+			</div>
+			<h4 id='32已用到的注解'>3.2、已用到的注解</h4>
+			<div class="text">
+				<pre>
+	@Controller 控制器的注解、写在类上方、方法返回的是页面
+	@RequestMapping 请求映射、访问路径、写在类的上方或方法的上方
+	@ResponseBody 把Java对象自动转换为JSON数据
+	@RestController 控制层注解写在类上方，相当于@Controller+@ResponseBody
+	@RequestParam 通过@RequestParam封装为一个Map集合
+	</pre>
+			</div>
+			<h3 id='4mybatis入门'>4、Mybatis入门</h3>
+			<h4 id='41原理'>4.1原理</h4>
+			<ul>
+				<li>ORM（Object Relational Mapping）框架，采用元数据来描述对象与关系映射的细节，元数据一般采用XML格式，并且存放在专门的对象一映射文件中。</li>
 
-	</ul>
-	<p>O R</p>
-	<p>Java mysql</p>
-	<p>类 表</p>
-	<p>变量 字段</p>
-	<p>对象 记录</p>
-	<h4 id='42常用标签和属性'>4.2常用标签和属性</h4>
-	<p>标签</p>
-	<ul>
-		<li>
-			<insert> 增添
-		</li>
-		<li>
-			<update> 修改
-		</li>
-		<li>
-			<delete> 删除
-		</li>
-		<li> 查找</li>
-		<li>
-			<resultMap> 映射
-		</li>
-		<li>
-			<id> 映射的唯一标识，主键字段的映射配置
-		</li>
-		<li>
-			<result> 结果映射的配置
-		</li>
-		<li>
-			<collection> 一对多
-		</li>
-		<li>
-			<association> 多对一
-		</li>
+			</ul>
+			<p>O R</p>
+			<p>Java mysql</p>
+			<p>类 表</p>
+			<p>变量 字段</p>
+			<p>对象 记录</p>
+			<h4 id='42常用标签和属性'>4.2常用标签和属性</h4>
+			<p>标签</p>
+			<ul>
+				<li>
+					<insert> 增添
+				</li>
+				<li>
+					<update> 修改
+				</li>
+				<li>
+					<delete> 删除
+				</li>
+				<li> 查找</li>
+				<li>
+					<resultMap> 映射
+				</li>
+				<li>
+					<id> 映射的唯一标识，主键字段的映射配置
+				</li>
+				<li>
+					<result> 结果映射的配置
+				</li>
+				<li>
+					<collection> 一对多
+				</li>
+				<li>
+					<association> 多对一
+				</li>
 
-	</ul>
-	<p>属性
-		<namespace> 接口路径
-			<id> 方法名
-				<resultMap> 结果映射（多表）
-					<parameterType> 参数类型（一个参数时）
-						<resultType> 结果类型（单表）
-							<property> 类中成员变量的名字
-								<column> 查询语句字段的名字
-									<javaType> 类型
-										<ofType> 集合泛型
-	</p>
-	<h4 id='43mybatis获取参数值的两种方式和'>4.3、Mybatis获取参数值的两种方式：#{}和${}</h4>
-	<h5 id='431若mapper接口方法的参数为单个字面量类型'>4.3.1、若mapper接口方法的参数为单个字面量类型</h5>
-	<ul>
-		<li>此时可以通过#{}和‘${}’来获取参数值</li>
+			</ul>
+			<p>属性
+				<namespace> 接口路径
+					<id> 方法名
+						<resultMap> 结果映射（多表）
+							<parameterType> 参数类型（一个参数时）
+								<resultType> 结果类型（单表）
+									<property> 类中成员变量的名字
+										<column> 查询语句字段的名字
+											<javaType> 类型
+												<ofType> 集合泛型
+			</p>
+			<h4 id='43mybatis获取参数值的两种方式和'>4.3、Mybatis获取参数值的两种方式：#{}和${}</h4>
+			<h5 id='431若mapper接口方法的参数为单个字面量类型'>4.3.1、若mapper接口方法的参数为单个字面量类型</h5>
+			<ul>
+				<li>此时可以通过#{}和‘${}’来获取参数值</li>
 
-	</ul>
-	<h5 id='432若mapper接口方法的参数为多个的字面量类型'>4.3.2、若mapper接口方法的参数为多个的字面量类型</h5>
-	<p>此时Mybatis会将参数放在map集合中，以两种方式存储数据</p>
-	<ul>
-		<li>以arg0,arg1...为键，以参数为值</li>
-		<li>以param0,param1为键，以参数为值</li>
+			</ul>
+			<h5 id='432若mapper接口方法的参数为多个的字面量类型'>4.3.2、若mapper接口方法的参数为多个的字面量类型</h5>
+			<p>此时Mybatis会将参数放在map集合中，以两种方式存储数据</p>
+			<ul>
+				<li>以arg0,arg1...为键，以参数为值</li>
+				<li>以param0,param1为键，以参数为值</li>
 
-	</ul>
-	<p> 因此，只需要通过#{}和‘${}’访问map集合的键，就可以获取相应的值</p>
-	<h5 id='433若mapper接口方法的参数为多个时'>4.3.3、若mapper接口方法的参数为多个时</h5>
-	<p>方法一：可以手动创建map集合，将这些数据放在map中，这样就可以使用自定义的键。</p>
-	<pre><code class='language-xml' lang='xml'>Map&lt;String,Object&gt; map = new HashMap&lt;&gt;();
+			</ul>
+			<p> 因此，只需要通过#{}和‘${}’访问map集合的键，就可以获取相应的值</p>
+			<h5 id='433若mapper接口方法的参数为多个时'>4.3.3、若mapper接口方法的参数为多个时</h5>
+			<p>方法一：可以手动创建map集合，将这些数据放在map中，这样就可以使用自定义的键。</p>
+			<pre><code class='language-xml' lang='xml'>Map&lt;String,Object&gt; map = new HashMap&lt;&gt;();
 	map.put(&quot;usermane&quot;,&quot;admin&quot;);
 	map.put(&quot;password&quot;,&quot;123456&quot;);
 </code></pre>
-	<p>方法二：可以通过@Param注解标识mapper接口中的方法参数，此时，会将这些参数放在map集合中 ，以两种方式进行存储</p>
-	<ul>
-		<li>以@Param注解的value属性值为键，以参数为值；</li>
-		<li>以param1,param2...为键，以参数为值；</li>
+			<p>方法二：可以通过@Param注解标识mapper接口中的方法参数，此时，会将这些参数放在map集合中 ，以两种方式进行存储</p>
+			<ul>
+				<li>以@Param注解的value属性值为键，以参数为值；</li>
+				<li>以param1,param2...为键，以参数为值；</li>
 
-	</ul>
-	<h5 id='434-批量删除'>4.3.4 批量删除</h5>
-	<ul>
-		<li>只能使用${}，如果使用#{}，则解析后的sql语句为<code>delete from t_user where id in (&#39;1,2,3&#39;)</code>，这样是将<code>1,2,3</code>看做是一个整体，只有id为<code>1,2,3</code>的数据会被删除。正确的语句应该是<code>delete from t_user where id in (1,2,3)</code>，或者<code>delete from t_user where id in (&#39;1&#39;,&#39;2&#39;,&#39;3&#39;)</code>
-		</li>
+			</ul>
+			<h5 id='434-批量删除'>4.3.4 批量删除</h5>
+			<ul>
+				<li>只能使用${}，如果使用#{}，则解析后的sql语句为<code>delete from t_user where id in (&#39;1,2,3&#39;)</code>，这样是将<code>1,2,3</code>看做是一个整体，只有id为<code>1,2,3</code>的数据会被删除。正确的语句应该是<code>delete from t_user where id in (1,2,3)</code>，或者<code>delete from t_user where id in (&#39;1&#39;,&#39;2&#39;,&#39;3&#39;)</code>
+				</li>
 
-	</ul>
-	<p>&nbsp;</p>
-	<p>&nbsp;</p>
-	<h2 id='二10月17日以来较为曲折的学习心路历程周末由于个人原因基本没有学习）'>二、10月17日以来较为曲折的学习心路历程</h2>
-	<h3 id='10月17日学习日记'>10月17日学习日记</h3>
-	<ul>
-		<li>搜索什么是formdata,什么是json,以及怎样提交这两种数据，但找了很多教程都涉及前端内容，而我由于javaweb知识匮乏，前端只写过简单的纯html和css静态页面，所以很苦恼。后跟随B站up主“编程不良人”的视频《基于SpringBoot和Mybatis的企业级文件上传与下载项目实战》进行学习，因为只有这个视频是从新建maven工程开始教学，其他与formdata相关的教程都是在已有部分代码和前端页面的情况下的教学，我无法复现。但这个教程的节奏很快，字体又很小，所以我一边操作一边学习，进度比较慢，且跟随视频的过程中多次报错。
-		</li>
+			</ul>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<h2 id='二10月17日以来较为曲折的学习心路历程周末由于个人原因基本没有学习）'>二、10月17日以来较为曲折的学习心路历程</h2>
+			<h3 id='10月17日学习日记'>10月17日学习日记</h3>
+			<ul>
+				<li>搜索什么是formdata,什么是json,以及怎样提交这两种数据，但找了很多教程都涉及前端内容，而我由于javaweb知识匮乏，前端只写过简单的纯html和css静态页面，所以很苦恼。后跟随B站up主“编程不良人”的视频《基于SpringBoot和Mybatis的企业级文件上传与下载项目实战》进行学习，因为只有这个视频是从新建maven工程开始教学，其他与formdata相关的教程都是在已有部分代码和前端页面的情况下的教学，我无法复现。但这个教程的节奏很快，字体又很小，所以我一边操作一边学习，进度比较慢，且跟随视频的过程中多次报错。
+				</li>
 
-	</ul>
-	<h3 id='10月18日学习日记-1'>10月18日学习日记</h3>
-	<ul>
-		<li>继续跟随《基于SpringBoot和Mybatis的企业级文件上传与下载项目实战》进行学习，但登录转用户界面遇到bug长时间无法解决，又不想半途而废，故下载源码，修改配置文件和数据库内容，但上传时仍然报错（There
-			was an unexpected error (type=Internal Server Error, status=500).
-			java.io.FileNotFoundException:
-			C:\Users\usermanes\AppData\Local\Temp\tomcat.4399829314636208868.8901\work\Tomcat\localhost\files\Users\chenyannan\files\files\2022-10-21\202210210028599a90fb11870a43e795cb9b4c11e06e00.jpg
-			(系统找不到指定的路径。)），由于前端基础太薄弱，就算看了很多解决方案也无法修改，故最终只能放弃该教程，转而寻找其他出路。</li>
-	</ul>
-	<h3 id='10月18日学习日记-2'>10月18日学习日记</h3>
-	<ul>
-		<li>找了很多教程都无法避免前端知识，决定找一个包含文件上传和下载的完整javaweb教程进行学习（之前为了尽快完成内容，我一般会避免时长20小时以上的教程，或者只节选任务相关的内容，但事实证明欲速而不达），最后选择了尚硅谷2020版的javaweb教程进行学习。在学习javaweb前我先整合了git和idea。
-		</li>
-	</ul>
-</section>
-</div>
+			</ul>
+			<h3 id='10月18日学习日记-1'>10月18日学习日记</h3>
+			<ul>
+				<li>继续跟随《基于SpringBoot和Mybatis的企业级文件上传与下载项目实战》进行学习，但登录转用户界面遇到bug长时间无法解决，又不想半途而废，故下载源码，修改配置文件和数据库内容，但上传时仍然报错（There
+					was an unexpected error (type=Internal Server Error, status=500).
+					java.io.FileNotFoundException:
+					C:\Users\usermanes\AppData\Local\Temp\tomcat.4399829314636208868.8901\work\Tomcat\localhost\files\Users\chenyannan\files\files\2022-10-21\202210210028599a90fb11870a43e795cb9b4c11e06e00.jpg
+					(系统找不到指定的路径。)），由于前端基础太薄弱，就算看了很多解决方案也无法修改，故最终只能放弃该教程，转而寻找其他出路。</li>
+			</ul>
+			<h3 id='10月18日学习日记-2'>10月18日学习日记</h3>
+			<ul>
+				<li>找了很多教程都无法避免前端知识，决定找一个包含文件上传和下载的完整javaweb教程进行学习（之前为了尽快完成内容，我一般会避免时长20小时以上的教程，或者只节选任务相关的内容，但事实证明欲速而不达），最后选择了尚硅谷2020版的javaweb教程进行学习。在学习javaweb前我先整合了git和idea。
+				</li>
+			</ul>
+		</section>
+	</div>
 </body>
 
 </html>
