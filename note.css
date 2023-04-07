@@ -187,6 +187,7 @@ width: 100px;
 }
 pre {
     white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 @media only screen and (max-width: 768px) {
@@ -268,4 +269,5 @@ width: 80px;
     font-family: Arial, sans-serif;
     line-height: 1.5;
     white-space: pre-wrap;
+    word-wrap: break-word;
   }
