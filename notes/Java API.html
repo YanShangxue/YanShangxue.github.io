@@ -1,14 +1,17 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width initial-scale=1'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
 	<link rel="stylesheet" href="/note.css">
-<title>Java API学习笔记</title>
+	<title>Java API学习笔记</title>
 </head>
+
 <body>
-    <div class="container">
+	<div class="container">
 		<header>
 			<h1>燕伤雪的学习笔记</h1>
 			<p>在这里，我将分享我在学习过程中所积累的知识和经验。</p>
@@ -18,143 +21,161 @@
 			<div class="nav-item">
 				<a href="/note.html">学习笔记</a>
 				<div class="sub-nav">
-				  <a href="#Front End">前端</a>
-				  <a href="#Backend">后端</a>
-				  <a href="#math">数学</a>
-				  <a href="#AI">人工智能</a>
-				  <a href="#Data Structures and Algorithms">数据结构与算法</a> 
-				  <a href="#other ">其他</a>
+					<a href="/note.html#End">前端</a>
+					<a href="/note.html#Backend">后端</a>
+					<a href="/note.html#math">数学</a>
+					<a href="/note.html#AI">人工智能</a>
+					<a href="/note.html#Data Structures and Algorithms">数据结构与算法</a>
+					<a href="/note.html#other ">其他</a>
 				</div>
-			  </div>
-			<a href="#">项目展示</a>
-			<a href="#">社交媒体</a>
-			<a href="#">联系方式</a>
+			</div>
+			<a href="/index.html#Project Presentation">项目展示</a>
+			<a href="/index.html#media">社交媒体</a>
+			<a href="/index.html#contact">联系方式</a>
 		</div>
-    
-    <section>
-        <h2 id='java-api'>Java API</h2>
-<p>说明：一不用背，二不能全部想着去理解，代码要求会用，而不是会写，强调上机动手能力。</p>
-<h3 id='1javalangmath'>1、java.lang.Math</h3>
-<p>数学类，包括最大值，最小值，圆周率等许多数学相关的方法</p>
-<p>不需要都记住，但在需要和数学相关的方法时，要记得可以用这个类</p>
-<h3 id='2javautilrandom'>2、java.util.Random</h3>
-<p>随机数类，最常用的是r.nextInt(n),标识取0—n-1个随机数</p>
-<h3 id='3javalangstring'>3、java.lang.String</h3>
-<h4 id='31说明'>3.1、说明</h4>
-<ul>
-<li><p>说明一：自动默认导入java.lang.*中的类（不包括子包）</p>
-</li>
-<li><p>说明二：字符串的本周是字符数组char[]</p>
-<p>char[] arr ={&#39;张&#39;,&#39;三&#39;}</p>
-</li>
-<li><p>说明三：字符串类型是Java所有类型中最常用的</p>
-</li>
 
-</ul>
-<h4 id='32常用方法'>3.2、常用方法</h4>
-<p>String s =&quot;abcde&quot;;</p>
-<ol start='' >
-<li><p>equals方法：判断字符串是否相等</p>
-<p>boolean a=s.equals(&quot;abc&quot;);</p>
-</li>
-<li><p>charAt方法：根据下标返回字符</p>
-<p>char b =s.charAt(2);</p>
-</li>
-<li><p>indexOf方法：查找指定字符串、找到返回起始下标</p>
-<p>int c =s.indexOf(&quot;abc&quot;);</p>
-</li>
-<li><p>length方法：字符串长度</p>
-<p>int d =s.length();</p>
-</li>
-<li><p>startsWith方法：判断是否以某字符串开头</p>
-<p>bool e=s.startWith(&quot;ab&quot;);</p>
-</li>
-<li><p>contains方法：是否包含某字符串</p>
-<p>bool f =s.contains(&quot;bc&quot;);</p>
-</li>
-<li><p>substring方法：截取</p>
-<p>string g=s.substring(2); 	//截取下标为2之前的字符串</p>
-<p>string h=s.substring(1,3); //截取下标为1-2的字符串</p>
-</li>
-<li><p>replace方法：替换指定的字符串</p>
-<p>String i =s.replace(&quot;bc&quot;,&quot;123&quot;);</p>
-</li>
-<li><p>trim方法：去除两边空格</p>
-<p>String j=&quot;      abc     &quot;.trim();</p>
-</li>
-<li><p>toUpperCase方法：转换大写</p>
-<p>String k=&quot;abc&quot;.toUpperCase();</p>
-</li>
+		<section>
+			<h2 id='java-api'>Java API</h2>
+			<p>说明：一不用背，二不能全部想着去理解，代码要求会用，而不是会写，强调上机动手能力。</p>
+			<h3 id='1javalangmath'>1、java.lang.Math</h3>
+			<p>数学类，包括最大值，最小值，圆周率等许多数学相关的方法</p>
+			<p>不需要都记住，但在需要和数学相关的方法时，要记得可以用这个类</p>
+			<h3 id='2javautilrandom'>2、java.util.Random</h3>
+			<p>随机数类，最常用的是r.nextInt(n),标识取0—n-1个随机数</p>
+			<h3 id='3javalangstring'>3、java.lang.String</h3>
+			<h4 id='31说明'>3.1、说明</h4>
+			<ul>
+				<li>
+					<p>说明一：自动默认导入java.lang.*中的类（不包括子包）</p>
+				</li>
+				<li>
+					<p>说明二：字符串的本周是字符数组char[]</p>
+					<p>char[] arr ={&#39;张&#39;,&#39;三&#39;}</p>
+				</li>
+				<li>
+					<p>说明三：字符串类型是Java所有类型中最常用的</p>
+				</li>
 
-</ol>
-<h4 id='33字符串创建方式'>3.3、字符串创建方式</h4>
-<p>方式一：字面值、建议</p>
-<ul>
-<li><p>说明：String开发中常用，Java对字面值进行了优化</p>
-</li>
-<li><p>原理：先检查内存中是否有此字符串、有责直接返回、如果没有再创建新字符串。</p>
-</li>
-<li><p>示例：String s1 =&quot;abc&quot;;</p>
-<p>String s2=new String(&quot;你好&quot;)；</p>
-<p>String s3=new String(&quot;你好&quot;)；</p>
-<p>System.out.println(s2 == s3);  				//ture</p>
-<p>System.out.println(s2.equals(s3));		 //ture</p>
-</li>
+			</ul>
+			<h4 id='32常用方法'>3.2、常用方法</h4>
+			<p>String s =&quot;abcde&quot;;</p>
+			<ol start=''>
+				<li>
+					<p>equals方法：判断字符串是否相等</p>
+					<p>boolean a=s.equals(&quot;abc&quot;);</p>
+				</li>
+				<li>
+					<p>charAt方法：根据下标返回字符</p>
+					<p>char b =s.charAt(2);</p>
+				</li>
+				<li>
+					<p>indexOf方法：查找指定字符串、找到返回起始下标</p>
+					<p>int c =s.indexOf(&quot;abc&quot;);</p>
+				</li>
+				<li>
+					<p>length方法：字符串长度</p>
+					<p>int d =s.length();</p>
+				</li>
+				<li>
+					<p>startsWith方法：判断是否以某字符串开头</p>
+					<p>bool e=s.startWith(&quot;ab&quot;);</p>
+				</li>
+				<li>
+					<p>contains方法：是否包含某字符串</p>
+					<p>bool f =s.contains(&quot;bc&quot;);</p>
+				</li>
+				<li>
+					<p>substring方法：截取</p>
+					<p>string g=s.substring(2); //截取下标为2之前的字符串</p>
+					<p>string h=s.substring(1,3); //截取下标为1-2的字符串</p>
+				</li>
+				<li>
+					<p>replace方法：替换指定的字符串</p>
+					<p>String i =s.replace(&quot;bc&quot;,&quot;123&quot;);</p>
+				</li>
+				<li>
+					<p>trim方法：去除两边空格</p>
+					<p>String j=&quot; abc &quot;.trim();</p>
+				</li>
+				<li>
+					<p>toUpperCase方法：转换大写</p>
+					<p>String k=&quot;abc&quot;.toUpperCase();</p>
+				</li>
 
-</ul>
-<p>方式二：new创建对象、不建议</p>
-<ul>
-<li>说明:new每次都会创建新的字符串</li>
-<li>类类型：==比较的是地址、equaks比较真实的值</li>
+			</ol>
+			<h4 id='33字符串创建方式'>3.3、字符串创建方式</h4>
+			<p>方式一：字面值、建议</p>
+			<ul>
+				<li>
+					<p>说明：String开发中常用，Java对字面值进行了优化</p>
+				</li>
+				<li>
+					<p>原理：先检查内存中是否有此字符串、有责直接返回、如果没有再创建新字符串。</p>
+				</li>
+				<li>
+					<p>示例：String s1 =&quot;abc&quot;;</p>
+					<p>String s2=new String(&quot;你好&quot;)；</p>
+					<p>String s3=new String(&quot;你好&quot;)；</p>
+					<p>System.out.println(s2 == s3); //ture</p>
+					<p>System.out.println(s2.equals(s3)); //ture</p>
+				</li>
 
-</ul>
-<p>		String s2=new String(&quot;你好&quot;)；</p>
-<p>		String s3=new String(&quot;你好&quot;)；</p>
-<p>		System.out.println(s2 == s3);  				//false</p>
-<p>		System.out.println(s2.equals(s3));		 //ture</p>
-<h4 id='34补充内容'>3.4、补充内容</h4>
-<ol start='' >
-<li>String字符串对象一旦创建就不能更改</li>
-<li>修改字符串的方法都是放回一个新的字符串</li>
-<li>"+"在字符串中是连接字符串的意思、并可以自动把其他类型转换为字符串再连接</li>
-<li>由于字符串对象不能改变、所以如果频繁修改字符串，不建议使用String类型（用StringBuilder）</li>
-<li>append 方法：用来连接字符串（类似+），但是不创建新对象，不会改变字符串地址。</li>
+			</ul>
+			<p>方式二：new创建对象、不建议</p>
+			<ul>
+				<li>说明:new每次都会创建新的字符串</li>
+				<li>类类型：==比较的是地址、equaks比较真实的值</li>
 
-</ol>
-<h3 id='4javautildate'>4、java.util.Date</h3>
-<h3 id='javatextsimpledateformat'>&amp;&amp;java.text.SimpleDateFormat</h3>
-<h4 id='41date转换为string'>4.1、Date转换为String</h4>
-<p>Date date =new Date();</p>
-<p>SimpleDateFormat s = new SimpleDateFormat(&quot;yyyy年MM月dd日 hh:mm:ss&quot;);</p>
-<p>String str =s.format(date);</p>
-<p>System.out.println(str);</p>
-<h4 id='42string转换为date'>4.2、String转换为Date    </h4>
-<p>//日期格式必须和字符串完全相同</p>
-<p>String s2 =&quot;20201209&quot;；</p>
-<p>SimpleDateFormat f =new SimpleDateFormat(&quot;yyyymmdd&quot;);</p>
-<p>Date date2 =f.parse(s2);</p>
-<p>System.out.println(data2);</p>
-<h4 id='43说明'>4.3、说明：</h4>
-<ol start='' >
-<li><p>Date本质是距离一个历史时间点的毫秒</p>
-<p>Date date =new Date();</p>
-<p>long t =date.getTime();</p>
-<p>System.out.println(t);</p>
-</li>
-<li><p>Date主要日期计算</p>
-<p>//下面以计算100年后的日期为例</p>
-</li>
+			</ul>
+			<p> String s2=new String(&quot;你好&quot;)；</p>
+			<p> String s3=new String(&quot;你好&quot;)；</p>
+			<p> System.out.println(s2 == s3); //false</p>
+			<p> System.out.println(s2.equals(s3)); //ture</p>
+			<h4 id='34补充内容'>3.4、补充内容</h4>
+			<ol start=''>
+				<li>String字符串对象一旦创建就不能更改</li>
+				<li>修改字符串的方法都是放回一个新的字符串</li>
+				<li>"+"在字符串中是连接字符串的意思、并可以自动把其他类型转换为字符串再连接</li>
+				<li>由于字符串对象不能改变、所以如果频繁修改字符串，不建议使用String类型（用StringBuilder）</li>
+				<li>append 方法：用来连接字符串（类似+），但是不创建新对象，不会改变字符串地址。</li>
 
-</ol>
-<pre><code class='language-java' lang='java'>   Date date =new Date();
+			</ol>
+			<h3 id='4javautildate'>4、java.util.Date</h3>
+			<h3 id='javatextsimpledateformat'>&amp;&amp;java.text.SimpleDateFormat</h3>
+			<h4 id='41date转换为string'>4.1、Date转换为String</h4>
+			<p>Date date =new Date();</p>
+			<p>SimpleDateFormat s = new SimpleDateFormat(&quot;yyyy年MM月dd日 hh:mm:ss&quot;);</p>
+			<p>String str =s.format(date);</p>
+			<p>System.out.println(str);</p>
+			<h4 id='42string转换为date'>4.2、String转换为Date </h4>
+			<p>//日期格式必须和字符串完全相同</p>
+			<p>String s2 =&quot;20201209&quot;；</p>
+			<p>SimpleDateFormat f =new SimpleDateFormat(&quot;yyyymmdd&quot;);</p>
+			<p>Date date2 =f.parse(s2);</p>
+			<p>System.out.println(data2);</p>
+			<h4 id='43说明'>4.3、说明：</h4>
+			<ol start=''>
+				<li>
+					<p>Date本质是距离一个历史时间点的毫秒</p>
+					<p>Date date =new Date();</p>
+					<p>long t =date.getTime();</p>
+					<p>System.out.println(t);</p>
+				</li>
+				<li>
+					<p>Date主要日期计算</p>
+					<p>//下面以计算100年后的日期为例</p>
+				</li>
+
+			</ol>
+			<pre><code class='language-java' lang='java'>   Date date =new Date();
    date.setTime(date.getTime()+2L*24*60*60*1000);
    SimpleDateFormat s =new SimpleDateFormat(&quot;yyyy-MM-dd hh:mm:ss&quot;);
    String str =s.format(date);
    System.out.println(str);
 </code></pre>
-<h2 id='5八种基本数据类型的封装类'>5、八种基本数据类型的封装类</h2>
-<p>作用：用于把字符串类型转换为基本数据类型</p>
-   <pre><code>
+			<h2 id='5八种基本数据类型的封装类'>5、八种基本数据类型的封装类</h2>
+			<p>作用：用于把字符串类型转换为基本数据类型</p>
+			<pre><code>
     基本数据类                  类类型
     byte                        Byte
     short                       Short
@@ -165,7 +186,8 @@
     boolean                     Boolean
     char                        Character
 </code></pre>
-</section>
-    </div>   
+		</section>
+	</div>
 </body>
+
 </html>
