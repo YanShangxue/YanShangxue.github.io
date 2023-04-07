@@ -256,3 +256,7 @@ width: 80px;
 
 
 }
+.image-container img {
+    width: 100%; /* 使图片宽度始终等于其父容器的宽度 */
+    height: auto; /* 保持图片的原始宽高比 */
+}
