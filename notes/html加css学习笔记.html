@@ -10,7 +10,6 @@
 </head>
 
 <body>
-	<div class="container">
 	<header>
 		<h1>燕伤雪的学习笔记</h1>
 		<p>在这里，我将分享我在学习过程中所积累的知识和经验。</p>
@@ -32,12 +31,11 @@
 		<a href="/index.html#media">社交媒体</a>
 		<a href="/index.html#contact">联系方式</a>
 	</div>
-
-	<section>
-	<h2 id='10月18日至10月20日学习笔记html加css'>10月18日至10月20日学习笔记(html加css)</h2>
+	<h1> 本文由于例子格式问题，样式容易出现错误，所以基本是篇废文，还是需要用typore看markdown源文件</h1>
+	<h2 id='html加css'>复习笔记(html加css)</h2>
 	<h3 id='1html复习'>1、html复习</h3>
 	<h4 id='11html简介'>1.1、html简介</h4>
-	<pre class="text">Hyper Text Markup Language （超文本标记语言） 简写：HTML
+	<pre>Hyper Text Markup Language （超文本标记语言） 简写：HTML
 		HTML 通过标签来标记要显示的网页中的各个部分。网页文件本身是一种文本文件，
 		通过在文本文件中添加标记符，可以告诉浏览器如何显示其中的内容（如：文字如何处理，画
 		面如何安排，图片如何显示等）</pre>
@@ -62,28 +60,15 @@
 		<font color="red" face="宋体" size="2">我是字体标签</font>
 	</p>
 	<h5 id='122常用特殊字符'>1.2.2、常用特殊字符</h5>
-	<p>显示结果 描述 实体名称 实体编号</p>
-	<p> 空格 &amp;nbsp &amp;#160</p>
-	<p>&lt; 小于号 &amp;lt &amp;#60</p>
-	<p>.&gt; 大于号 &amp;gt &amp;#62</p>
-	<p>&amp; 和号 &amp;amp &amp;#38</p>
-	<p>&quot; 引号 &amp;quot &amp;#34</p>
-	<p>` 撇号 &amp;apos &amp;#39</p>
+	<img src="/picture/html常用字符符号.png" alt="啊，我也裂了">
+
 	<p>例如：</p>
 	<p>我是&lt;br&gt;标签<br>
 		国哥好
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;帅啊!</p>
 	<h5 id='123标题标签'>1.2.3、标题标签</h5>
-	<ul>
-		<li>h1 - h6 都是标题标签
-			h1 最大 h6 最小
-			align 属性是对齐属性
-			left 左对齐(默认)
-			center 剧中
-			right 右对齐</li>
-
-	</ul>
+	<img src="/picture/标题标签.png" alt="裂了">
 	<p>例如：</p>
 	<h1 align="left">标题 1</h1>
 	<h2 align="center">标题 2</h2>
@@ -108,12 +93,11 @@
 	<p><a href="http://localhost:8080" target="_self">百度_self</a><br></p>
 	<p><a href="http://localhost:8080" target="_blank">百度_blank</a><br></p>
 	<h5 id='125列表'>1.2.5、列表</h5>
-	<ul>
-		<li>ul 是无序列表
-			type 属性可以修改列表项前面的符号
-			li 是列表项</li>
-
-	</ul>
+	<pre>
+	ul 	是无序列表
+	type	 属性可以修改列表项前面的符号
+	li 	是列表项
+	</pre>
 	<p>示例：</p>
 	<ul type="none">
 		<li>赵四</li>
@@ -123,25 +107,27 @@
 	</ul>
 	<h5 id='126img标签'>1.2.6、img标签</h5>
 	<ul>
-		<li>img 标签是图片标签,用来显示图片
-			src 属性可以设置图片的路径
-			width 属性设置图片的宽度
-			height 属性设置图片的高度
-			border 属性设置图片边框大小
-			alt 属性设置当指定路径找不到图片时,用来代替显示的文本内容</li>
-		<li>在 web 中路径分为相对路径和绝对路径两种
-			相对路径:
-			. 表示当前文件所在的目录
-			.. 表示当前文件所在的上一级目录
-			文件名 表示当前文件所在目录的文件,相当于 ./文件名 ./ 可以省略
-			绝对路径:
-			正确格式是: <a href='http://ip:port/' target='_blank' class='url'>http://ip:port/</a>工程名/资源路径
-			错误格式是: 盘符:/目录/文件名</li>
+		<pre>
+	img 标签是图片标签,用来显示图片
+	src 属性可以设置图片的路径
+	width 属性设置图片的宽度
+	height 属性设置图片的高度
+	border 属性设置图片边框大小
+	alt 属性设置当指定路径找不到图片时,用来代替显示的文本内容
+
+	在 web 中路径分为相对路径和绝对路径两种
+	相对路径:
+	. 表示当前文件所在的目录
+	.. 表示当前文件所在的上一级目录
+	文件名 表示当前文件所在目录的文件,相当于 ./文件名 ./ 可以省略
+	绝对路径:
+	正确格式是: <a href='http://ip:port/' target='_blank' class='url'>http://ip:port/</a>工程名/资源路径
+	错误格式是: 盘符:/目录/文件名</pre>
 
 	</ul>
 	<p>示例：</p>
-	<p><img src="1.jpg" width="200" height="260" border="1" />
-		<img src="../2.png" width="200" height="260" />
+	<p><img src="1.jpg" width="200" height="260" border="1" alt="我不想加无必要的图了"/>
+		<img src="../2.png" width="200" height="260" alt="不重要的图，舍弃了"/>
 		&lt;img src=&quot;../imgs/3.jpg&quot; width=&quot;200&quot; height=&quot;260&quot; alt=&quot;找不到/&gt;
 	</p>
 	<h5 id='127超链接'>1.2.7、超链接</h5>
@@ -633,8 +619,6 @@
 
 	</ul>
 	<p>&nbsp;</p>
-</section>
-</div>
 </body>
 
 </html>
